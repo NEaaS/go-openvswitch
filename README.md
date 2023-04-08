@@ -8,3 +8,9 @@ Go packages which enable interacting with Open vSwitch and related tools. Apache
 - `ovsnl`: Package ovsnl enables interaction with the Linux Open vSwitch generic netlink interface.
 
 See each package's README for additional information.
+
+--- 
+
+## Changes
+
+Other than some changes to push this as a go module under the `neaas` organization, CI updates, and style changes, this fork adds little to the [upstream](https://github.com/digitalocean) other than 1 key change. OvS bridge configurations can now be set beyond what has an explicit function. A PR has been made to the upstream focusing on this: digitalocean@[#117](https://github.com/digitalocean/go-openvswitch/pull/117).
