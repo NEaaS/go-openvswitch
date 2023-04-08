@@ -12,7 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//+build linux
+//go:build linux
+// +build linux
 
 package ovsnl_test
 
@@ -21,8 +22,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/digitalocean/go-openvswitch/ovsnl"
 	"github.com/google/go-cmp/cmp"
+	"github.com/neaas/go-openvswitch/ovsnl"
 )
 
 func TestLinuxClientIntegration(t *testing.T) {

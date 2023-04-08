@@ -12,7 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//+build linux
+//go:build linux
+// +build linux
 
 package ovsnl
 
@@ -20,12 +21,12 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/digitalocean/go-openvswitch/ovsnl/internal/ovsh"
 	"github.com/google/go-cmp/cmp"
 	"github.com/mdlayher/genetlink"
 	"github.com/mdlayher/genetlink/genltest"
 	"github.com/mdlayher/netlink"
 	"github.com/mdlayher/netlink/nlenc"
+	"github.com/neaas/go-openvswitch/ovsnl/internal/ovsh"
 )
 
 func TestClientDatapathListShortHeader(t *testing.T) {

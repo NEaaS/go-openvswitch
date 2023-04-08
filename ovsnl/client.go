@@ -20,8 +20,8 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/digitalocean/go-openvswitch/ovsnl/internal/ovsh"
 	"github.com/mdlayher/genetlink"
+	"github.com/neaas/go-openvswitch/ovsnl/internal/ovsh"
 )
 
 // Sizes of various structures, used in unsafe casts.
